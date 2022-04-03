@@ -14,7 +14,7 @@ int prior(char op) {
     }
 }
 std::string infx2pstfx(std::string inf) {
-std::string str1 = "";
+  std::string str1 = "";
     TStack<char, 100> stack;
     for (int i = 0; i < inf.length(); i++) {
         if ((inf[i] >= '0') && (inf[i] <= '9')) {
