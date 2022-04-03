@@ -2,12 +2,13 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-template<typename T, int size>
+template<typename T, int 100>
 class TStack {
-private:
+ private:
     T arr[size];
     int top;
-public:
+ 
+ public:
     TStack() : top{ -1 } {
     }
     bool isEmpty() {
