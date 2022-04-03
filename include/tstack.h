@@ -4,11 +4,12 @@
 
 template<typename T, int size>
 class TStack {
-  private:
+
+   private:
      T arr[100];
      int top;
 
-  public:
+   public:
      TStack() : top{ -1 } {
      }
      bool isEmpty() {
