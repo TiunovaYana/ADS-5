@@ -22,7 +22,6 @@ class TStack {
              arr[++top] = value;
      }
      T get() {
-         if (!isEmpty())
          return arr[top];
      }
      void pop() {
