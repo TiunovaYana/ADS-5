@@ -11,10 +11,10 @@ class TStack {
  public:
      TStack() : top{ -1 } {
      }
-     bool isEmpty() const {
+     bool isEmpty() {
          return top == -1;
      }
-     bool isFull() const {
+     bool isFull() {
          return top == size - 1;
      }
      void push(T value) {
