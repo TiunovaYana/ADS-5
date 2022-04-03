@@ -18,8 +18,10 @@ std::string str1 = "";
     TStack<char, 100> stack;
     for (int i = 0; i < inf.length(); i++) {
         if ((inf[i] >= '0') && (inf[i] <= '9')) {
-            if ((str1 != "") && (!((inf[i - 1] >= '0') && (inf[i - 1] <= '9')))) {
+            if (str1 != "") {
+                if (!((inf[i - 1] >= '0') && (inf[i - 1] <= '9'))) {
                     str1 += ' ';
+                }
             }
             str1 += inf[i];
         } else {
